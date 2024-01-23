@@ -1,10 +1,19 @@
+let numeroSecreto = generarNumeroSecreto();
+
 function asignarTextoElemento(elemento, texto) {
     let ele = document.querySelector(elemento);
     ele.innerHTML = texto;
+    return;
 }
 
-function intentoDeUsuario() {
-    alert('Funciona');
+function verificarIntento() {
+    let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
+    
+    return;
+}
+
+function generarNumeroSecreto() {
+    return Math.floor(Math.random() * 10) + 1;
 }
 
 asignarTextoElemento('h1', 'Juego del número secreto');
